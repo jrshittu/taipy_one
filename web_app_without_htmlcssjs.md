@@ -341,6 +341,6 @@ We encourage you to explore Taipy and see how it can help you build data-driven 
 </p>
 
 <p align="center">
-<img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo">
+<img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo"> <br/>
 Thank you for reading, and happy coding!
 </p>
