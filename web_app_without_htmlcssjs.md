@@ -294,4 +294,7 @@ Gui(page).run(debug=True)
 ## Explore Apps Built with Taipy <a name="example"></a>
 Let's explore some of the amazing applications that have been built using Taipy.
 
+1. Stock Visualization
+{% embed https://docs.taipy.io/en/release-3.1/gallery/finance/1_stock_visualization/ %}
+
 ## Conclusions <a name="conc"></a>
