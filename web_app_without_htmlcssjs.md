@@ -98,6 +98,7 @@ Gui(page).run(debug=True, title="Fake Details")
 **Q:** What do you think will happen when you run the program?
 
 Now, let's break it down and create the program step by step
+
 **Step 1: Import the required libraries**
 
 * Import the `Faker` library to generate fake data.
