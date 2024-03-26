@@ -335,6 +335,8 @@ We also provided a step-by-step guide to building web apps with Taipy and explor
 
 We encourage you to explore Taipy and see how it can help you build data-driven web applications with ease. You can start by checking out the official Taipy repository on GitHub and adding a star to show your support.
 
+Thank you for reading, and happy coding!
+
 <h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 35px;">Don't Forget to ⭐️ the Official Repo</h1>
 <p align="center">
 <a href="https://github.com/Avaiga/taipy"><img src="https://img.shields.io/github/stars/Avaiga/taipy?style=social" alt="GitHub Stars"></a>
@@ -344,5 +346,4 @@ We encourage you to explore Taipy and see how it can help you build data-driven 
 
 <p align="center">
 <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo"> <br/>
-Thank you for reading, and happy coding!
 </p>
