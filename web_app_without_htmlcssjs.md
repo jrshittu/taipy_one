@@ -15,6 +15,17 @@ Over the past few years, HTML, CSS & JavaScript has been the go to technologies 
 ## Meet Taipy! <a name="meet"></a>
 Taipy is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
+<p align="center">
+  
+</p>
+<h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 48px;"> ⭐️</h1>
+<h3 align="center" style="color: #2E4053; font-weight: bold; font-size: 24px;">Data and AI Algorithms into Production-Ready Web Apps</h3>
+<p align="center">
+  <a href="https://github.com/Avaiga/taipy"><img src="https://img.shields.io/github/stars/Avaiga/taipy?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/Avaiga/taipy/issues"><img src="https://img.shields.io/github/issues/Avaiga/taipy" alt="GitHub Issues"></a>
+  <a href="https://github.com/Avaiga/taipy/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Avaiga/taipy" alt="GitHub License"></a>
+</p>
+
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k24u6ko4tkjffice6thz.gif)
 
 Source: [Taipy Docs](https://docs.taipy.io/en/latest/)
