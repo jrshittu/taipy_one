@@ -16,7 +16,7 @@ Over the past few years, HTML, CSS & JavaScript has been the go to technologies 
 Taipy is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
 <p align="center">
-  <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" alt="Taipy Logo">
+  <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="24px" alt="Taipy Logo">
 </p>
 
 <h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 48px;"> ⭐️</h1>
