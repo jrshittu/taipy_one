@@ -332,16 +332,6 @@ In this step, we set the `margin-top` property of the root element to `4em`, whi
 
 By applying this rule, we can center the contents of a web page both horizontally and vertically, and add some space between the top of the page and its contents.
 
-**`main.css`**
-```css
-:root{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4em;
-}
-```
-
 ## Live Demo Tutorials <a name="example"></a>
 
 ## Conclusions <a name="conc"></a>
