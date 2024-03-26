@@ -156,6 +156,191 @@ Gui(page).run(debug=True, title="Fake Details")
 
 When you run this code, the "Generate" button triggers the `generate_detail` function, which updates the displayed data and shows a notification with the generated name.
 
+### Project 2: Image Background Remover 🤖
+![bg_remover](https://github.com/jrshittu/build_with_taipy/assets/110542235/9c9d321c-90ca-4faf-876d-c8ae7a88c0fd)
+
+Now let's create a Taipy GUI app to remove backgrounds from images
+
+**Full Code: `main.py`**
+```python
+from PIL import Image
+from rembg import remove
+from taipy.gui import Gui, notify
+from io import BytesIO
+
+image_upload = ""
+image_download = "removebg_img.png"
+old_image = None
+new_image = None
+bg_removed = False
+
+def convert_image(img):
+    buf = BytesIO()
+    img.save(buf, format="PNG")
+    byte_im = buf.getvalue()
+    return byte_im
+
+def rm_bg(state):
+    notify(state, 'info', 'Uploading image...')
+    image = Image.open(state.image_upload)
+    
+    notify(state, 'info', 'Removing bg...')
+    new_image = remove(image)
+    new_image.save("removebg_img.png")
+
+    notify(state, 'success', 'bg removed successfully!')
+    state.old_image = convert_image(image)
+    state.new_image = convert_image(new_image)
+    state.bg_removed = True
+
+page = """
+# Image Background Remover {: .color-primary}
+Upload an Image: <|{image_upload}|file_selector|extensions=.png,.jpg|on_action=rm_bg|> <br />
+<|{old_image}|image|>
+<|{new_image}|image|><br/>
+<|{image_download}|file_download|label=Download Image|active={bg_removed}|>
+"""
+
+Gui(page).run(debug=True)
+```
+
+Now, let's break it down and create the program step by step
+
+**Step 1: Import necessary libraries**
+
+In this step, we import the necessary libraries for working with images, removing backgrounds, creating a GUI, and working with binary data.
+```python
+from PIL import Image
+from rembg import remove
+from taipy.gui import Gui, notify
+from io import BytesIO
+```
+**Step 2: Initialize variables**
+
+In this step, we initialize variables for storing the uploaded image file, the name of the downloaded image file, the original and processed images, and a boolean variable for indicating whether the background has been removed.
+```python
+image_upload = ""
+image_download = "removebg_img.png"
+old_image = None
+new_image = None
+bg_removed = False
+```
+**Step 3: Define the `convert_image` function**
+
+In this step, we define a function for converting an image to binary data. This function takes an image as input and returns its binary data.
+```python
+def convert_image(img):
+    buf = BytesIO()
+    img.save(buf, format="PNG")
+    byte_im = buf.getvalue()
+    return byte_im
+```
+**Step 4: Define the `rm_bg` function**
+
+In this step, we define a function for removing the background from an image and displaying notifications to the user. This function takes a state object as input and performs the following operations:
+
+* Displays a notification indicating that the image is being uploaded.
+* Opens the uploaded image using the `Image.open` method from the `PIL` library.
+* Displays a notification indicating that the background is being removed.
+* Removes the background from the image using the `remove` function from the `rembg` library.
+* Saves the processed image to a file using the `save` method from the `PIL` library.
+* Displays a notification indicating that the background has been removed successfully.
+* Converts the original and processed images to binary data using the `convert_image` function.
+* Sets the `old_image`, `new_image`, and `bg_removed` attributes of the state object to the original image data, processed image data, and `True` respectively.
+```python
+def rm_bg(state):
+    notify(state, 'info', 'Uploading image...')
+    image = Image.open(state.image_upload)
+
+    notify(state, 'info', 'Removing bg...')
+    new_image = remove(image)
+    new_image.save("removebg_img.png")
+
+    notify(state, 'success', 'bg removed successfully!')
+    state.old_image = convert_image(image)
+    state.new_image = convert_image(new_image)
+    state.bg_removed = True
+```
+**Step 5: Define the GUI layout**
+
+In this step, we define the layout of the GUI using a string. The layout consists of a file upload widget, two image display widgets, and a file download widget.
+```python
+page = """
+# Image Background Remover {: .color-primary}
+Upload an Image: <|{image_upload}|file_selector|extensions=.png,.jpg|on_action=rm_bg|> <br />
+<|{old_image}|image|>
+<|{new_image}|image|><br/>
+<|{image_download}|file_download|label=Download Image|active={bg_removed}|>
+"""
+```
+**Step 6: Run the GUI**
+
+In this step, we create a `Gui` object using the `page` string and run it in debug mode.
+```python
+Gui(page).run(debug=True)
+```
+
+**Step 7: Attach CSS**
+
+Create a CSS file in the same directory as your script and save it with the same name as the script. for example, if your script is `main.py`, save the CSS file as `main.css`. Hence let's create the CSS rule for `:root`. 
+
+**Step 8: Select the root element**
+
+In this step, we select the root element of the document using the `:root` pseudo-class.
+```css
+:root {
+}
+```
+**Step 9: Set the display property to flex**
+
+In this step, we set the `display` property of the root element to `flex`, which enables flexbox layout for its children.
+```css
+:root {
+    display: flex;
+}
+```
+**Step 10: Set the align-items property to center**
+
+In this step, we set the `align-items` property of the root element to `center`, which centers its children vertically.
+```css
+:root {
+    display: flex;
+    align-items: center;
+}
+```
+**Step 11: Set the justify-content property to center**
+
+In this step, we set the `justify-content` property of the root element to `center`, which centers its children horizontally.
+```css
+:root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+**Step 12: Set the margin-top property to 4em**
+
+In this step, we set the `margin-top` property of the root element to `4em`, which adds some space between the top of the page and its contents.
+```css
+:root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+```
+
+By applying this rule, we can center the contents of a web page both horizontally and vertically, and add some space between the top of the page and its contents.
+
+**`main.css`**
+```css
+:root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+```
 
 ## Live Demo Tutorials <a name="example"></a>
 
