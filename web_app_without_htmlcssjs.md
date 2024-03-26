@@ -13,7 +13,7 @@
 Over the past few years, HTML, CSS & JavaScript has been the go to technologies for building web applications. However, the learning curve has been a tedious and time consuming especially for python developers and data scientists. This is where Taipy comes into play. 
 
 ## Meet Taipy! <a name="meet"></a>
-Taipy is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
+[Taipy](https://github.com/Avaiga/taipy) is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
 <h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 48px;"> Add a Star ⭐️ to show ❤️</h1> 
 <p align="center">
