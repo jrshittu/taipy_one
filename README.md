@@ -6,7 +6,7 @@
 | [Meet Taipy](#meet)
 | [Why Taipy?](#why)  |
 | [Explore Apps Built With Taipy](#example) |
-| [Building Web Apps with Taipy](#build) |
+| [Build Your First Web Apps with Taipy](#build) |
 | [Conclusion](#conc)|
 
 ## Introduction <a name="intro"></a>
