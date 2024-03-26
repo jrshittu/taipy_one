@@ -62,67 +62,10 @@ Run the code and wait for the client link `http://127.0.0.1:5000` to display and
 You can change the port if you want to run multiple servers at the same time with `Gui(...).run(port=xxxx)`.
 
 ### Project One: Personal Details Generator
-![fake_details](https://github.com/jrshittu/build_with_taipy/assets/110542235/3a46224a-5d2f-47b5-ae43-c5d3ba52e222)
+![fake](https://github.com/jrshittu/taipy_one/assets/110542235/9c4e6803-eec4-4a4d-86ab-45ef98d3b357)
+A simple GUI application that generates random user details, including a name, phone number, and address, using the `Faker` library.
 
-Now, let's create a simple GUI application that generates random user details, including a name, phone number, and address, using the `Faker` library.
-
-**Step 1: Import the required libraries**
-
-* Import the `Faker` library to generate fake data.
-* Import the `Gui` and `notify` classes from `taipy.gui` to create the GUI and display notifications.
-```python
-from faker import Faker
-from taipy.gui import Gui, notify
-```
-**Step 2: Initialize global variables**
-
-* Initialize three global variables `name`, `phone`, and `address` as empty strings. These variables will store the generated fake data.
-```python
-name = ""
-phone = ""
-address = ""
-```
-**Step 3: Create an instance of the `Faker` class**
-
-* Create an instance of the `Faker` class to generate fake data.
-```python
-fake = Faker()
-```
-**Step 4: Define the `generate_name` function**
-
-* Define a function `generate_detail` that takes a `state` parameter. This function generates fake data using the `Faker` instance and updates the global variables `name`, `phone`, and `address` with the generated data. The `notify` function is used to display a notification to the user with the generated name.
-```python
-def generate_detail(state):
-    state.name = fake.name()
-    state.phone = fake.phone_number()
-    state.address = fake.address()
-    notify(state, 'info', f'Here is your new details: {state.name}')
-```
-**Step 5: Define the Taipy GUI page layout**
-
-* Define the Taipy GUI page layout using Markdown syntax. The layout includes a header, an image, three text fields to display the generated fake data, and a button to generate new data. The `on_action` attribute of the button is set to the `generate_name` function.
-```python
-page = """
-# Generate Fake Data {: .color-primary}
-
-<|personal.png|image|> <br />
-Generated name is: <|{name}|> <br />
-Generated Phone Number: <|{phone}|> <br />
-Generated Address: <|{address}|>
-
-<|Generate|button|class_name=plain mt1 p1|on_action=generate_detail|>
-"""
-```
-**Step 6: Run the Taipy GUI application**
-
-* Finally, run the Taipy GUI application using the `Gui` class. The `page` variable is passed to the `Gui` constructor to set the page layout. The `debug` parameter is set to `True` to enable debug mode, and the `title` parameter is set to `"Fake Details"` to set the application title.
-```python
-Gui(page).run(debug=True, title="Fake Details")
-```
-
-When you run this code, the "Generate" button triggers the `generate_detail` function, which updates the displayed data and shows a notification with the generated name.
-
-### Full code
+**Full code**
 ```python
 from faker import Faker
 from taipy.gui import Gui, notify
@@ -152,6 +95,65 @@ Generated Address: <|{address}|>
 
 Gui(page).run(debug=True, title="Fake Details")
 ```
+**Q:** What do you think will happen when you run the program?
+
+Now, let's break it down and create the program step by step
+**Step 1: Import the required libraries**
+
+* Import the `Faker` library to generate fake data.
+* Import the `Gui` and `notify` classes from `taipy.gui` to create the GUI and display notifications.
+```python
+from faker import Faker
+from taipy.gui import Gui, notify
+```
+**Step 2: Initialize global variables**
+
+Initialize three global variables `name`, `phone`, and `address` as empty strings. These variables will store the generated fake data.
+```python
+name = ""
+phone = ""
+address = ""
+```
+**Step 3: Create an instance of the `Faker` class**
+
+Create an instance of the `Faker` class to generate fake data.
+```python
+fake = Faker()
+```
+**Step 4: Define the `generate_name` function**
+
+Define a function `generate_detail` that takes a `state` parameter. This function generates fake data using the `Faker` instance and updates the global variables `name`, `phone`, and `address` with the generated data. The `notify` function is used to display a notification to the user with the generated name.
+```python
+def generate_detail(state):
+    state.name = fake.name()
+    state.phone = fake.phone_number()
+    state.address = fake.address()
+    notify(state, 'info', f'Here is your new details: {state.name}')
+```
+**Step 5: Define the Taipy GUI page layout**
+
+Define the Taipy GUI page layout using Markdown syntax. The layout includes a header, an image, three text fields to display the generated fake data, and a button to generate new data. The `on_action` attribute of the button is set to the `generate_name` function.
+```python
+page = """
+# Generate Fake Data {: .color-primary}
+
+<|personal.png|image|> <br />
+Generated name is: <|{name}|> <br />
+Generated Phone Number: <|{phone}|> <br />
+Generated Address: <|{address}|>
+
+<|Generate|button|class_name=plain mt1 p1|on_action=generate_detail|>
+"""
+```
+**Step 6: Run the Taipy GUI application**
+
+Finally, run the Taipy GUI application using the `Gui` class. The `page` variable is passed to the `Gui` constructor to set the page layout. The `debug` parameter is set to `True` to enable debug mode, and the `title` parameter is set to `"Fake Details"` to set the application title.
+```python
+Gui(page).run(debug=True, title="Fake Details")
+```
+
+When you run this code, the "Generate" button triggers the `generate_detail` function, which updates the displayed data and shows a notification with the generated name.
+
 
 ## Live Demo Tutorials <a name="example"></a>
 
