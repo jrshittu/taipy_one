@@ -1,12 +1,12 @@
 # Taipy: Building Interactive Web Apps without HTML/CSS and JavaScript
 
-| Table of Contents 
-| --- 
-| [Introduction](#intro) 
-| [Why Taipy?](#why)  
-| [Building Web Apps with Taipy](#build) 
-| [Live Demo Tutorials](#example) 
-| [Conclusion](#conc)
+| Table of Contents |
+| --- |
+| [Introduction](#intro) |
+| [Why Taipy?](#why)  |
+| [Building Web Apps with Taipy](#build) |
+| [Live Demo Tutorials](#example) |
+| [Conclusion](#conc)|
 
 ## Introduction <a name="intro"></a>
 Sure, here's a possible article outline for the topic "Taipy: Building Responsive Web Apps without HTML/CSS and JavaScript":
