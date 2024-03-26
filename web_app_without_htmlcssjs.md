@@ -63,6 +63,7 @@ You can change the port if you want to run multiple servers at the same time wit
 
 ### Project One: Personal Details Generator
 ![fake](https://github.com/jrshittu/taipy_one/assets/110542235/9c4e6803-eec4-4a4d-86ab-45ef98d3b357)
+
 A simple GUI application that generates random user details, including a name, phone number, and address, using the `Faker` library.
 
 **Full code**
