@@ -16,8 +16,9 @@ Over the past few years, HTML, CSS & JavaScript has been the go to technologies 
 Taipy is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
 <p align="center">
-  
+  <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" alt="Taipy Logo">
 </p>
+
 <h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 48px;"> ⭐️</h1>
 <h3 align="center" style="color: #2E4053; font-weight: bold; font-size: 24px;">Data and AI Algorithms into Production-Ready Web Apps</h3>
 <p align="center">
@@ -26,11 +27,11 @@ Taipy is an open-source Python library that enables data scientists and develope
   <a href="https://github.com/Avaiga/taipy/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Avaiga/taipy" alt="GitHub License"></a>
 </p>
 
+Taipy GUI enables developers to create interactive web interfaces for their data pipelines without requiring HTML/CSS & JavaScript skills. It provides access to interactive widgets, controls and presentative elements to design user interfaces using Python and connect them to your data pipeline functions.
+
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k24u6ko4tkjffice6thz.gif)
 
 Source: [Taipy Docs](https://docs.taipy.io/en/latest/)
-
-Taipy GUI enables developers to create interactive web interfaces for their data pipelines without requiring HTML/CSS & JavaScript skills. It provides access to interactive widgets, controls and presentative elements to design user interfaces using Python and connect them to your data pipeline functions.
 
 ## Why Taipy? <a name="why"></a>
 Taipy provides a simple and intuitive way to build web apps with minimal coding. It offers several advantages over traditional methods. Here are some reasons why Taipy is worth considering for your next web development project:
