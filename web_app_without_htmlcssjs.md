@@ -68,15 +68,15 @@ Now, let's create a simple GUI application that generates random user details, i
 
 **Step 1: Import the required libraries**
 
-* The `Faker` library is used to generate random personal details, such as names, phone numbers, and addresses.
-* The `taipy.gui` library is used to build the web application using Taipy's GUI framework. The `Gui` class is used to create the GUI, and the `notify` function is used to display notifications to the user.
+* Import the `Faker` library to generate fake data.
+* Import the `Gui` and `notify` classes from `taipy.gui` to create the GUI and display notifications.
 ```python
 from faker import Faker
 from taipy.gui import Gui, notify
 ```
 **Step 2: Initialize global variables**
 
-* Three global variables are initialized: `name`, `phone`, and `address`. These variables will be used to store the generated personal details.
+* Initialize three global variables `name`, `phone`, and `address` as empty strings. These variables will store the generated fake data.
 ```python
 name = ""
 phone = ""
@@ -84,15 +84,15 @@ address = ""
 ```
 **Step 3: Create an instance of the `Faker` class**
 
-* An instance of the `Faker` class is created. This instance will be used to generate random personal details.
+* Create an instance of the `Faker` class to generate fake data.
 ```python
 fake = Faker()
 ```
 **Step 4: Define the `generate_name` function**
 
-* The `generate_name` function is defined. This function generates random personal details using the `Faker` instance, and updates the global variables `name`, `phone`, and `address` with the generated details. The `notify` function is used to display a notification to the user with the generated name.
+* Define a function `generate_detail` that takes a `state` parameter. This function generates fake data using the `Faker` instance and updates the global variables `name`, `phone`, and `address` with the generated data. The `notify` function is used to display a notification to the user with the generated name.
 ```python
-def generate_name(state):
+def generate_detail(state):
     state.name = fake.name()
     state.phone = fake.phone_number()
     state.address = fake.address()
@@ -100,26 +100,27 @@ def generate_name(state):
 ```
 **Step 5: Define the Taipy GUI page layout**
 
-* The Taipy GUI page layout is defined using Markdown syntax. The layout includes a header, three text fields to display the generated personal details, and a button to generate new details. The `on_action` attribute of the button is set to the `generate_name` function.
+* Define the Taipy GUI page layout using Markdown syntax. The layout includes a header, an image, three text fields to display the generated fake data, and a button to generate new data. The `on_action` attribute of the button is set to the `generate_name` function.
 ```python
 page = """
-# Click to generate random details
+# Generate Fake Data {: .color-primary}
 
+<|personal.png|image|> <br />
 Generated name is: <|{name}|> <br />
 Generated Phone Number: <|{phone}|> <br />
 Generated Address: <|{address}|>
 
-<|Generate|button|class_name=plain mt1 p1|on_action=generate_name|>
+<|Generate|button|class_name=plain mt1 p1|on_action=generate_detail|>
 """
 ```
 **Step 6: Run the Taipy GUI application**
 
-* Finally, the Taipy GUI application is run using the `Gui` class. The `page` variable is passed to the `Gui` constructor to set the page layout. The `debug` parameter is set to `True` to enable debug mode, and the `title` parameter is set to `"personal_details_generator"` to set the application title.
+* Finally, run the Taipy GUI application using the `Gui` class. The `page` variable is passed to the `Gui` constructor to set the page layout. The `debug` parameter is set to `True` to enable debug mode, and the `title` parameter is set to `"Fake Details"` to set the application title.
 ```python
-Gui(page).run(debug=True, title="personal_details_generator")
+Gui(page).run(debug=True, title="Fake Details")
 ```
 
-When you run this code, the "Generate" button triggers the `generate_name` function, which updates the displayed data and shows a notification with the generated name.
+When you run this code, the "Generate" button triggers the `generate_detail` function, which updates the displayed data and shows a notification with the generated name.
 
 ### Full code
 ```python
@@ -139,8 +140,9 @@ def generate_name(state):
     notify(state, 'info', f'Here is your new details: {state.name}')
 
 page = """
-# Click to generate random details
+# Generate Fake Data {: .color-primary}
 
+<|personal.png|image|> <br />
 Generated name is: <|{name}|> <br />
 Generated Phone Number: <|{phone}|> <br />
 Generated Address: <|{address}|>
@@ -148,7 +150,7 @@ Generated Address: <|{address}|>
 <|Generate|button|class_name=plain mt1 p1|on_action=generate_name|>
 """
 
-Gui(page).run(debug=True, title="personal_details_generator")
+Gui(page).run(debug=True, title="Fake Details")
 ```
 
 ## Live Demo Tutorials <a name="example"></a>

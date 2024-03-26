@@ -14,8 +14,9 @@ def generate_name(state):
     notify(state, 'info', f'Here is your new details: {state.name}')
 
 page = """
-# Click to generate random details
+# Generate Fake Data {: .color-primary}
 
+<|personal.png|image|> <br />
 Generated name is: <|{name}|> <br />
 Generated Phone Number: <|{phone}|> <br />
 Generated Address: <|{address}|>
@@ -23,4 +24,4 @@ Generated Address: <|{address}|>
 <|Generate|button|class_name=plain mt1 p1|on_action=generate_name|>
 """
 
-Gui(page).run(debug=True, title="personal_details_generator")
+Gui(page).run(debug=True, title="Fake Details")
