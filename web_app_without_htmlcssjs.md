@@ -6,7 +6,7 @@
 | [Meet Taipy](#meet)
 | [Why Taipy?](#why)  |
 | [Building Web Apps with Taipy](#build) |
-| [Live Demo Tutorials](#example) |
+| [Explore Apps Built With Taipy](#example) |
 | [Conclusion](#conc)|
 
 ## Introduction <a name="intro"></a>
@@ -15,7 +15,7 @@ Over the past few years, HTML, CSS & JavaScript has been the go to technologies 
 ## Meet Taipy! <a name="meet"></a>
 [Taipy](https://github.com/Avaiga/taipy) is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
-<h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 48px;"> Add a Star ⭐️ to show ❤️</h1> 
+<h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 35px;"> Explore our Official Repo and add a ⭐️ </h1> 
 <p align="center">
   <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo">
 </p>
@@ -291,6 +291,7 @@ In this step, we create a `Gui` object using the `page` string and run it in deb
 Gui(page).run(debug=True)
 ```
 
-## Live Demo Tutorials <a name="example"></a>
+## Explore Apps Built with Taipy <a name="example"></a>
+Let's explore some of the amazing applications that have been built using Taipy.
 
 ## Conclusions <a name="conc"></a>
