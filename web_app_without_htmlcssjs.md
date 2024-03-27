@@ -5,8 +5,8 @@
 | [Introduction](#intro) |
 | [Meet Taipy](#meet)
 | [Why Taipy?](#why)  |
-| [Building Web Apps with Taipy](#build) |
 | [Explore Apps Built With Taipy](#example) |
+| [Build Your First Web Apps with Taipy](#build) |
 | [Conclusion](#conc)|
 
 ## Introduction <a name="intro"></a>
@@ -15,9 +15,9 @@ Over the past few years, HTML, CSS & JavaScript has been the go to technologies 
 ## Meet Taipy! <a name="meet"></a>
 [Taipy](https://github.com/Avaiga/taipy) is an open-source Python library that enables data scientists and developers to build robust end-to-end data pipelines.
 
-<h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 35px;"> Explore the Official Repo and add a ⭐️ </h1> 
 <p align="center">
   <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo">
+  Taipy⭐️
 </p>
 <h3 align="center" style="color: #2E4053; font-weight: bold; font-size: 24px;">Data and AI Algorithms into Production-Ready Web Apps</h3>
 <p align="center">
@@ -44,6 +44,41 @@ Taipy provides a simple and intuitive way to build web apps with minimal coding.
 4. Powerful data processing capabilities: Taipy offers powerful data processing capabilities that enable developers to perform complex data analysis and visualization tasks with ease. This makes it an ideal choice for building web applications in fields such as finance, healthcare, and science, where data analysis and visualization are critical.
 
 5. Easy deployment: Taipy makes it easy to deploy web applications, with support for popular cloud platforms such as AWS, Azure, and Google Cloud. This means that developers can easily deploy their web applications to the cloud, without the need for extensive configuration or setup.
+
+## Explore Apps Built with Taipy <a name="example"></a>
+Let's explore some of the amazing applications that have been built using Taipy.
+
+1. [Stock Visualization](https://docs.taipy.io/en/release-3.1/gallery/finance/1_stock_visualization/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/34d82c7b-85b2-4c19-98ff-d3a26f164d3f)
+
+2. [COVID Dashboard](https://docs.taipy.io/en/release-3.1/gallery/visualization/2_covid_dashboard/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/88d60c14-0a60-413d-9d7d-12391f5e2299)
+
+3. [Production Planning](https://docs.taipy.io/en/release-3.1/gallery/decision_support/3_production_planning/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/e70d035f-c448-4e6f-8d8d-2facd77aeae7)
+
+4. [LLM Chatbot](https://docs.taipy.io/en/release-3.1/gallery/llm/5_chatbot/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/3e6beb43-57f7-422f-9696-e7a5d658d956)
+
+5. [TalkToTaipy](https://docs.taipy.io/en/release-3.1/gallery/llm/6_talk_to_taipy/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/184cdeb0-2141-407c-8e34-b25183d80a78)
+
+6. [Measuring Industry Agglomeration](https://docs.taipy.io/en/release-3.1/gallery/visualization/7_industry_agglom/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/078df893-c78d-4327-b144-d193b2f05dd0)
+
+7. [Real-time Face Recognition](https://docs.taipy.io/en/release-3.1/gallery/other/face_recognition/)
+
+![image](https://github.com/jrshittu/taipy_one/assets/110542235/9bc2297c-8c1f-445c-8bfa-bd822b7f2511)
+
+
+Click [here](https://docs.taipy.io/en/release-3.1/gallery/) for the project gallery.
+
 
 ## Building Web Apps with Taipy <a name="build"></a>
 **Requirement:** Python 3.8 or later on Linux, Windows, and Mac. 
@@ -291,39 +326,6 @@ In this step, we create a `Gui` object using the `page` string and run it in deb
 Gui(page).run(debug=True)
 ```
 
-## Explore Apps Built with Taipy <a name="example"></a>
-Let's explore some of the amazing applications that have been built using Taipy.
-
-1. [Stock Visualization](https://docs.taipy.io/en/release-3.1/gallery/finance/1_stock_visualization/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/34d82c7b-85b2-4c19-98ff-d3a26f164d3f)
-
-2. [COVID Dashboard](https://docs.taipy.io/en/release-3.1/gallery/visualization/2_covid_dashboard/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/88d60c14-0a60-413d-9d7d-12391f5e2299)
-
-3. [Production Planning](https://docs.taipy.io/en/release-3.1/gallery/decision_support/3_production_planning/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/e70d035f-c448-4e6f-8d8d-2facd77aeae7)
-
-4. [LLM Chatbot](https://docs.taipy.io/en/release-3.1/gallery/llm/5_chatbot/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/3e6beb43-57f7-422f-9696-e7a5d658d956)
-
-5. [TalkToTaipy](https://docs.taipy.io/en/release-3.1/gallery/llm/6_talk_to_taipy/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/184cdeb0-2141-407c-8e34-b25183d80a78)
-
-6. [Measuring Industry Agglomeration](https://docs.taipy.io/en/release-3.1/gallery/visualization/7_industry_agglom/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/078df893-c78d-4327-b144-d193b2f05dd0)
-
-7. [Real-time Face Recognition](https://docs.taipy.io/en/release-3.1/gallery/other/face_recognition/)
-
-![image](https://github.com/jrshittu/taipy_one/assets/110542235/9bc2297c-8c1f-445c-8bfa-bd822b7f2511)
-
-
-Click [here](https://docs.taipy.io/en/release-3.1/gallery/) for the project gallery.
 
 ## Conclusions <a name="conc"></a>
 
@@ -332,6 +334,8 @@ In this article, we introduced Taipy, an open-source Python library that enables
 We also provided a step-by-step guide to building web apps with Taipy and explored some examples of applications built with Taipy. Taipy provides a simple and intuitive way to build web apps with minimal coding, making it an ideal choice for python developers, data scientists, and citizen developers who want to build web applications that meet their needs.
 
 We encourage you to explore Taipy and see how it can help you build data-driven web applications with ease. You can start by checking out the official Taipy repository on GitHub and adding a star to show your support.
+
+Thank you for reading, and happy coding!
 
 <h1 align="center" style="color: #3A7E28; font-weight: bold; font-size: 35px;">Don't Forget to ⭐️ the Official Repo</h1>
 <p align="center">
@@ -342,5 +346,4 @@ We encourage you to explore Taipy and see how it can help you build data-driven 
 
 <p align="center">
 <img src="https://github.com/jrshittu/taipy_one/assets/110542235/725ed1f9-1c90-4dbf-a009-2ee19118d949" width="35px" alt="Taipy Logo"> <br/>
-Thank you for reading, and happy coding!
 </p>
